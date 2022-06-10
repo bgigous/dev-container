@@ -1,7 +1,7 @@
 FROM ubuntu:jammy-20220428
 
-RUN useradd --create-home --shell /bin/bash --group sudo jonathan \
-    && passwd -d jonathan
+RUN useradd --create-home --shell /bin/bash --group sudo brandon \
+    && passwd -d brandon
 
 RUN apt-get update \
     && apt-get install --yes \
@@ -71,5 +71,5 @@ RUN apt-get update \
         vim \
     && apt-get clean
 
-USER jonathan
-WORKDIR /home/jonathan
+USER brandon
+WORKDIR /home/brandon
